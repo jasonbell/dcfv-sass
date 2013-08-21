@@ -1,0 +1,30 @@
+html {
+  background-color: #6f2551; }
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
+  background: white;
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 auto;
+  padding: 32px;
+  max-width: 60em;
+  width: 95%; }
+
+h1 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #74bb02; }
+
+footer {
+  border-top: 1px solid #1e1e1e; }
+  footer p {
+    font-size: 12.8px; }
+    footer p a {
+      color: #74bb02; }
+    footer p.legal {
+      float: left; }
+    footer p.contact {
+      float: right; }
