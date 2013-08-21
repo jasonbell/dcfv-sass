@@ -1,0 +1,606 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+    <section>
+        <h1>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73701/fvdmug-logo.png">
+        <br>
+</h1>
+<div>
+<h1 style="font-style: normal; font-variant: normal;">
+        <font style="font-size: 112px;">SASS &amp; COMPASS</font>
+    </h1>
+<div class="fragment" data-fragment-index="0" style="font-style: normal; font-variant: normal;">
+    <font color="#3d85c6" style="font-size: 72px;">&amp; Drupal</font>
+</div>
+</div>
+</section>
+<section>
+    <h2>Jason Bell<br>
+</h2>
+<div>I build pieces of the web at <a href="http://startinteraction.com">Start Interaction</a>.</div>
+<div>
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73703/solid-teal.png" style="width: 200.9891027249289px; height: 171.3125901222229px; max-height: none; max-width: none;">
+    <br>
+</div>
+<div class="fragment" data-fragment-index="0">
+    <p>I am various permutations of myself on…</p>
+
+    <ul>
+<li>
+            <a href="http://twitter.com/j_bell" style="text-align: center;">Twitter</a>
+            <span style="text-align: center;">—@j_bell</span>
+            <br>
+</li>
+        <li>
+            <a href="https://alpha.app.net/jasonbell" style="text-align: center;">App.net</a>
+            <span style="text-align: center;">—@jasonbell</span>
+            <br>
+</li>
+        <li>
+            <a href="https://drupal.org/user/392435" style="text-align: center;">Drupal.org</a>
+            <span style="text-align: center;">—jason.bell</span>
+            <br>
+</li>
+    </ul>
+</div>
+<div class="fragment" data-fragment-index="1">
+<br>
+    <p>I help organize <a href="http://www.meetup.com/The-Fox-Valley-Drupal-Meetup-Group/">Fox Valley Drupal</a>.</p>
+<div>
+</div>
+</div>
+</section>
+    <section>
+        <section>
+            <h2>Sass</h2>
+<div>
+            <br>
+        </div>
+<div>
+        <ul>
+<li>
+<span style="text-align: center;">Sass is a preprocessor for CSS that will help you fall in love with CSS all over again.</span>
+        <br>
+</li>
+<li>
+<span style="text-align: center;">Sass is written in Ruby and distributed via RubyGems.</span>
+        <br>
+</li>
+<li>
+        <span style="text-align: center;">There are 2 syntaxes. Both work.</span>
+    </li>
+<ul>
+<li>
+    <span style="text-align: center;">.sass = old</span>
+</li>
+<li>
+<span style="text-align: center;">.scss = new, more common, just use it</span>
+</li>
+</ul>
+</ul>
+</div>
+</section>
+<section>
+    <h2>Installing Sass</h2>
+<div>It's slightly different by platform, but essentially boils down to the following command:</div>
+<div>
+    <br>
+</div>
+<div>
+<div>
+<pre><code><font style="font-size: 42px;">sudo gem install compass </font></code></pre>
+</div>
+</div>
+<div>
+<br>
+</div>
+<blockquote>
+<span style="font-size: 35.66618728637695px; font-style: normal; font-variant: normal;">
+    <a href="http://snugug.com/musings/installing-sass-and-compass-across-all-platform">http://snugug.com/musings/installing-sass-and-compass-across-all-platform</a>
+</span>
+</blockquote>
+<br>
+</section>
+<section>
+    <h2>Create a Sass project</h2>
+<div>Every valid CSS3 stylesheet is valid .scss. You can change the extension of an existing file to get rolling.</div>
+<div>
+    <br>
+</div>
+<div>From your project directory run:</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code><font style="font-size: 42px;">sass --watch style.scss:style.css</font></code></pre>
+</div>
+<div>
+<br>
+</div>
+<div>This will compile your .scss file into a .css file.</div>
+<br>
+</section>
+</section>
+<section>
+<h2>Variables</h2>
+<div>Use variables to store values you use all over the place.</div>
+<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 309px; top: 223px;">CSS</div>
+<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 51px; top: 108px;">
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 78px; height: 46px; z-index: 4; left: 154px; top: 223px;">Sass</div>
+<div class="absolute-element" style="position: absolute; width: 425px; height: 334px; z-index: 5; left: 12px; top: 278px;">
+<pre><code>$black: rgb(30, 30, 30);
+$green: rgb(116, 187, 2);
+$base-font-size:   16px;
+$base-line-height: 20px;
+
+body {
+  color: $black;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  padding: $base-font-size*2;</code>
+<code>}
+
+h1 {
+  color: $green;
+}
+</code></pre>
+</div>
+<pre style="width: 392px; position: absolute; height: 191px; z-index: 4; left: 531px; top: 278px;" class="absolute-element">
+<code>body {
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 32px;
+}
+
+h1 {
+  color: #74bb02; }
+</code>
+<div style="font-style: normal; font-variant: normal;">
+    <br>
+</div>
+</pre>
+<br>
+</section>
+<section>
+    <h2>Nesting</h2>
+<div>Stop repeating yourself and doing things over again.</div>
+<div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 183px; top: 229px;">Then</div>
+<div class="absolute-element" style="position: absolute; width: 507px; height: 414px; z-index: 5; left: 7px; top: 290px; max-height: none; max-width: none;">
+<pre><code>footer {
+&nbsp; border-top: 1px solid $black;
+}
+
+footer p {
+&nbsp; font-size: $base-font-size*.8;
+}
+
+footer p.legal {
+&nbsp; float: left;
+}
+
+footer p.contact {
+&nbsp; float: right;
+}</code></pre>
+</div>
+<div class="absolute-element" style="position: absolute; width: 437px; height: 412px; z-index: 6; left: 506px; top: 288px; max-height: none; max-width: none;">
+<pre><code><font color="#f1c232">footer</font> {
+&nbsp; <font color="#6aa84f">border-top:</font> 1px solid $black;
+
+&nbsp; <font color="#f1c232">p</font> {
+&nbsp; &nbsp; <font color="#6aa84f">font-size:</font> $base-font-size*.8;
+
+&nbsp; &nbsp; <font color="#f1c232">a</font> {
+&nbsp; &nbsp; &nbsp; <font color="#6aa84f">color:</font> $green;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; <font color="#f1c232">&amp;.legal</font> {
+&nbsp; &nbsp; &nbsp; <font color="#6aa84f">float:</font> left;
+&nbsp; &nbsp; }
+&nbsp; }
+} </code></pre>
+</div>
+<div class="absolute-element" style="position: absolute; width: 85px; height: 46px; z-index: 7; left: 670px; top: 227px;">Now</div>
+</section>
+<section>
+    <h2>Mixins</h2>
+<div>Reusable chunks of CSS properties.<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 467px; height: 331px; z-index: 4; left: 10px; top: 178px; max-height: none; max-width: none;">
+<pre><code>$sans-serif: "Helvetica Neue", sans-serif;
+<span style="font-family: monospace; font-size: 20.06222915649414px; font-style: normal; font-variant: normal;">$serif: </span>Georgia, serif;
+</code><code>@mixin font-body {
+&nbsp; font-family: $sans-serif;
+&nbsp; font-weight: 400;
+}
+
+@mixin font-headers {
+&nbsp; font-family: $serif;
+&nbsp; font-weight: 400;
+} </code></pre>
+</div>
+<pre class="absolute-element" style="position: absolute; width: 417px; height: 184px; z-index: 4; left: 36px; top: 491px; max-height: none; max-width: none;">
+<code>body {
+  @include font-body;
+}</code>
+<code>
+h1 {
+  @include font-headers;
+} </code>
+</pre>
+<div class="absolute-element" style="position: absolute; width: 469px; height: 430px; z-index: 4; left: 474px; top: 285px; max-height: none; max-width: none;">
+<pre><code>body {
+&nbsp; font-family: "Helvetica Neue", sans-serif;
+&nbsp; font-weight: 400;
+}
+
+h1 {
+&nbsp; font-family: Georgia, serif;
+&nbsp; font-weight: 400;
+} </code></pre>
+</div>
+<br>
+</section>
+<section>
+    <h2>Resources</h2>
+<h3>Sass</h3>
+<div>
+<ul>
+<li>http://sass-lang.com/<br>
+</li>
+<li>http://thesassway.com/<br>
+</li>
+<li>http://sassmeister.com<br>
+</li>
+</ul>
+<div style="text-align: left;">
+    <br>
+</div>
+<h3>Compass</h3>
+<ul>
+<li>http://compass-style.org/<br>
+</li>
+</ul>
+</div>
+</section>
+</div>
+<div class="slides">
+    <section>
+        <h1>
+<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73701/fvdmug-logo.png">
+        <br>
+</h1>
+<div>
+<h1 style="font-style: normal; font-variant: normal;">
+        <font style="font-size: 112px;">SASS &amp; COMPASS</font>
+    </h1>
+<div class="fragment" data-fragment-index="0" style="font-style: normal; font-variant: normal;">
+    <font color="#3d85c6" style="font-size: 72px;">&amp; Drupal</font>
+</div>
+</div>
+</section>
+<section>
+    <h2>Jason Bell<br>
+</h2>
+<div>I build pieces of the web at <a href="http://startinteraction.com">Start Interaction</a>.</div>
+<div>
+    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73703/solid-teal.png" style="width: 200.9891027249289px; height: 171.3125901222229px; max-height: none; max-width: none;">
+    <br>
+</div>
+<div class="fragment" data-fragment-index="0">
+    <p>I am various permutations of myself on…</p>
+
+    <ul>
+<li>
+            <a href="http://twitter.com/j_bell" style="text-align: center;">Twitter</a>
+            <span style="text-align: center;">—@j_bell</span>
+            <br>
+</li>
+        <li>
+            <a href="https://alpha.app.net/jasonbell" style="text-align: center;">App.net</a>
+            <span style="text-align: center;">—@jasonbell</span>
+            <br>
+</li>
+        <li>
+            <a href="https://drupal.org/user/392435" style="text-align: center;">Drupal.org</a>
+            <span style="text-align: center;">—jason.bell</span>
+            <br>
+</li>
+    </ul>
+</div>
+<div class="fragment" data-fragment-index="1">
+<br>
+    <p>I help organize <a href="http://www.meetup.com/The-Fox-Valley-Drupal-Meetup-Group/">Fox Valley Drupal</a>.</p>
+<div>
+</div>
+</div>
+</section>
+    <section>
+        <section>
+            <h2>Sass</h2>
+<div>
+            <br>
+        </div>
+<div>
+        <ul>
+<li>
+<span style="text-align: center;">Sass is a preprocessor for CSS that will help you fall in love with CSS all over again.</span>
+        <br>
+</li>
+<li>
+<span style="text-align: center;">Sass is written in Ruby and distributed via RubyGems.</span>
+        <br>
+</li>
+<li>
+        <span style="text-align: center;">There are 2 syntaxes. Both work.</span>
+    </li>
+<ul>
+<li>
+    <span style="text-align: center;">.sass = old</span>
+</li>
+<li>
+<span style="text-align: center;">.scss = new, more common, just use it</span>
+</li>
+</ul>
+</ul>
+</div>
+</section>
+<section>
+    <h2>Installing Sass</h2>
+<div>It's slightly different by platform, but essentially boils down to the following command:</div>
+<div>
+    <br>
+</div>
+<div>
+<div>
+<pre><code><font style="font-size: 42px;">sudo gem install compass </font></code></pre>
+</div>
+</div>
+<div>
+<br>
+</div>
+<blockquote>
+<span style="font-size: 35.66618728637695px; font-style: normal; font-variant: normal;">
+    <a href="http://snugug.com/musings/installing-sass-and-compass-across-all-platform">http://snugug.com/musings/installing-sass-and-compass-across-all-platform</a>
+</span>
+</blockquote>
+<br>
+</section>
+<section>
+    <h2>Create a Sass project</h2>
+<div>Every valid CSS3 stylesheet is valid .scss. You can change the extension of an existing file to get rolling.</div>
+<div>
+    <br>
+</div>
+<div>From your project directory run:</div>
+<div>
+<br>
+</div>
+<div>
+<pre><code><font style="font-size: 42px;">sass --watch style.scss:style.css</font></code></pre>
+</div>
+<div>
+<br>
+</div>
+<div>This will compile your .scss file into a .css file.</div>
+<br>
+</section>
+</section>
+<section>
+<h2>Variables</h2>
+<div>Use variables to store values you use all over the place.</div>
+<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 309px; top: 223px;">CSS</div>
+<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 51px; top: 108px;">
+    <br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 78px; height: 46px; z-index: 4; left: 154px; top: 223px;">Sass</div>
+<div class="absolute-element" style="position: absolute; width: 425px; height: 334px; z-index: 5; left: 12px; top: 278px;">
+<pre><code>$black: rgb(30, 30, 30);
+$green: rgb(116, 187, 2);
+$base-font-size:   16px;
+$base-line-height: 20px;
+
+body {
+  color: $black;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  padding: $base-font-size*2;</code>
+<code>}
+
+h1 {
+  color: $green;
+}
+</code></pre>
+</div>
+<pre style="width: 392px; position: absolute; height: 191px; z-index: 4; left: 531px; top: 278px;" class="absolute-element">
+<code>body {
+  color: #1e1e1e;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 32px;
+}
+
+h1 {
+  color: #74bb02; }
+</code>
+<div style="font-style: normal; font-variant: normal;">
+    <br>
+</div>
+</pre>
+<br>
+</section>
+<section>
+    <h2>Nesting</h2>
+<div>Stop repeating yourself and doing things over again.</div>
+<div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 183px; top: 229px;">Then</div>
+<div class="absolute-element" style="position: absolute; width: 507px; height: 414px; z-index: 5; left: 7px; top: 290px; max-height: none; max-width: none;">
+<pre><code>footer {
+&nbsp; border-top: 1px solid $black;
+}
+
+footer p {
+&nbsp; font-size: $base-font-size*.8;
+}
+
+footer p.legal {
+&nbsp; float: left;
+}
+
+footer p.contact {
+&nbsp; float: right;
+}</code></pre>
+</div>
+<div class="absolute-element" style="position: absolute; width: 437px; height: 412px; z-index: 6; left: 506px; top: 288px; max-height: none; max-width: none;">
+<pre><code><font color="#f1c232">footer</font> {
+&nbsp; <font color="#6aa84f">border-top:</font> 1px solid $black;
+
+&nbsp; <font color="#f1c232">p</font> {
+&nbsp; &nbsp; <font color="#6aa84f">font-size:</font> $base-font-size*.8;
+
+&nbsp; &nbsp; <font color="#f1c232">a</font> {
+&nbsp; &nbsp; &nbsp; <font color="#6aa84f">color:</font> $green;
+&nbsp; &nbsp; }
+
+&nbsp; &nbsp; <font color="#f1c232">&amp;.legal</font> {
+&nbsp; &nbsp; &nbsp; <font color="#6aa84f">float:</font> left;
+&nbsp; &nbsp; }
+&nbsp; }
+} </code></pre>
+</div>
+<div class="absolute-element" style="position: absolute; width: 85px; height: 46px; z-index: 7; left: 670px; top: 227px;">Now</div>
+</section>
+<section>
+    <h2>Mixins</h2>
+<div>Reusable chunks of CSS properties.<br>
+</div>
+<div class="absolute-element" style="position: absolute; width: 467px; height: 331px; z-index: 4; left: 10px; top: 178px; max-height: none; max-width: none;">
+<pre><code>$sans-serif: "Helvetica Neue", sans-serif;
+<span style="font-family: monospace; font-size: 20.06222915649414px; font-style: normal; font-variant: normal;">$serif: </span>Georgia, serif;
+</code><code>@mixin font-body {
+&nbsp; font-family: $sans-serif;
+&nbsp; font-weight: 400;
+}
+
+@mixin font-headers {
+&nbsp; font-family: $serif;
+&nbsp; font-weight: 400;
+} </code></pre>
+</div>
+<pre class="absolute-element" style="position: absolute; width: 417px; height: 184px; z-index: 4; left: 36px; top: 491px; max-height: none; max-width: none;">
+<code>body {
+  @include font-body;
+}</code>
+<code>
+h1 {
+  @include font-headers;
+} </code>
+</pre>
+<div class="absolute-element" style="position: absolute; width: 469px; height: 430px; z-index: 4; left: 474px; top: 285px; max-height: none; max-width: none;">
+<pre><code>body {
+&nbsp; font-family: "Helvetica Neue", sans-serif;
+&nbsp; font-weight: 400;
+}
+
+h1 {
+&nbsp; font-family: Georgia, serif;
+&nbsp; font-weight: 400;
+} </code></pre>
+</div>
+<br>
+</section>
+<section>
+    <h2>Resources</h2>
+<h3>Sass</h3>
+<div>
+<ul>
+<li>http://sass-lang.com/<br>
+</li>
+<li>http://thesassway.com/<br>
+</li>
+<li>http://sassmeister.com<br>
+</li>
+</ul>
+<div style="text-align: left;">
+    <br>
+</div>
+<h3>Compass</h3>
+<ul>
+<li>http://compass-style.org/<br>
+</li>
+</ul>
+</div>
+</section>
+</div>
+
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
