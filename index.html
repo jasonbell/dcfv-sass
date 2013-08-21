@@ -4,9 +4,9 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js - The HTML Presentation Framework</title>
+		<title>Sass & Compass | Fox Valley Drupal</title>
 
-		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="description" content="Presentation on Sass & Compass for Fox Valley Drupal">
 		<meta name="author" content="Hakim El Hattab">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -14,8 +14,8 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/beige.css" id="theme">
 
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -36,137 +36,101 @@
 
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
-    <section>
-        <h1>
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73701/fvdmug-logo.png">
-        <br>
-</h1>
-<div>
-<h1 style="font-style: normal; font-variant: normal;">
-        <font style="font-size: 112px;">SASS &amp; COMPASS</font>
-    </h1>
-<div class="fragment" data-fragment-index="0" style="font-style: normal; font-variant: normal;">
-    <font color="#3d85c6" style="font-size: 72px;">&amp; Drupal</font>
-</div>
-</div>
-</section>
-<section>
-    <h2>Jason Bell<br>
-</h2>
-<div>I build pieces of the web at <a href="http://startinteraction.com">Start Interaction</a>.</div>
-<div>
-    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73703/solid-teal.png" style="width: 200.9891027249289px; height: 171.3125901222229px; max-height: none; max-width: none;">
-    <br>
-</div>
-<div class="fragment" data-fragment-index="0">
-    <p>I am various permutations of myself on…</p>
-
-    <ul>
-<li>
-            <a href="http://twitter.com/j_bell" style="text-align: center;">Twitter</a>
-            <span style="text-align: center;">—@j_bell</span>
-            <br>
-</li>
-        <li>
-            <a href="https://alpha.app.net/jasonbell" style="text-align: center;">App.net</a>
-            <span style="text-align: center;">—@jasonbell</span>
-            <br>
-</li>
-        <li>
-            <a href="https://drupal.org/user/392435" style="text-align: center;">Drupal.org</a>
-            <span style="text-align: center;">—jason.bell</span>
-            <br>
-</li>
-    </ul>
-</div>
-<div class="fragment" data-fragment-index="1">
-<br>
-    <p>I help organize <a href="http://www.meetup.com/The-Fox-Valley-Drupal-Meetup-Group/">Fox Valley Drupal</a>.</p>
-<div>
-</div>
-</div>
-</section>
-    <section>
         <section>
-            <h2>Sass</h2>
-<div>
-            <br>
-        </div>
-<div>
-        <ul>
-<li>
-<span style="text-align: center;">Sass is a preprocessor for CSS that will help you fall in love with CSS all over again.</span>
-        <br>
-</li>
-<li>
-<span style="text-align: center;">Sass is written in Ruby and distributed via RubyGems.</span>
-        <br>
-</li>
-<li>
-        <span style="text-align: center;">There are 2 syntaxes. Both work.</span>
-    </li>
-<ul>
-<li>
-    <span style="text-align: center;">.sass = old</span>
-</li>
-<li>
-<span style="text-align: center;">.scss = new, more common, just use it</span>
-</li>
-</ul>
-</ul>
-</div>
-</section>
-<section>
-    <h2>Installing Sass</h2>
-<div>It's slightly different by platform, but essentially boils down to the following command:</div>
-<div>
-    <br>
-</div>
-<div>
-<div>
-<pre><code><font style="font-size: 42px;">sudo gem install compass </font></code></pre>
-</div>
-</div>
-<div>
-<br>
-</div>
-<blockquote>
-<span style="font-size: 35.66618728637695px; font-style: normal; font-variant: normal;">
-    <a href="http://snugug.com/musings/installing-sass-and-compass-across-all-platform">http://snugug.com/musings/installing-sass-and-compass-across-all-platform</a>
-</span>
-</blockquote>
-<br>
-</section>
-<section>
-    <h2>Create a Sass project</h2>
-<div>Every valid CSS3 stylesheet is valid .scss. You can change the extension of an existing file to get rolling.</div>
-<div>
-    <br>
-</div>
-<div>From your project directory run:</div>
-<div>
-<br>
-</div>
-<div>
-<pre><code><font style="font-size: 42px;">sass --watch style.scss:style.css</font></code></pre>
-</div>
-<div>
-<br>
-</div>
-<div>This will compile your .scss file into a .css file.</div>
-<br>
-</section>
-</section>
-<section>
-<h2>Variables</h2>
-<div>Use variables to store values you use all over the place.</div>
-<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 309px; top: 223px;">CSS</div>
-<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 51px; top: 108px;">
-    <br>
-</div>
-<div class="absolute-element" style="position: absolute; width: 78px; height: 46px; z-index: 4; left: 154px; top: 223px;">Sass</div>
-<div class="absolute-element" style="position: absolute; width: 425px; height: 334px; z-index: 5; left: 12px; top: 278px;">
-<pre><code>$black: rgb(30, 30, 30);
+          <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73701/fvdmug-logo.png">
+          <h1 style="font-style: normal; font-variant: normal;">
+            <font style="font-size: 112px;">SASS &amp; COMPASS</font>
+          </h1>
+          <div class="fragment" data-fragment-index="0" style="font-style: normal; font-variant: normal;">
+              <font color="#3d85c6" style="font-size: 72px;">&amp; Drupal</font>
+          </div>
+        </section>
+
+        <section>
+          <h1>Jason Bell</h1>
+          <p>I build pieces of the web at <a href="http://startinteraction.com">Start Interaction</a>.</p>
+
+          <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73703/solid-teal.png" style="width: 200.9891027249289px; height: 171.3125901222229px; max-height: none; max-width: none;">
+
+          <div class="fragment" data-fragment-index="0">
+            <p>I am various permutations of myself on…</p>
+
+            <ul>
+              <li>
+                <a href="http://twitter.com/j_bell" style="text-align: center;">Twitter</a><span style="text-align: center;">—@j_bell</span>
+              </li>
+              <li>
+                <a href="https://alpha.app.net/jasonbell" style="text-align: center;">App.net</a><span style="text-align: center;">—@jasonbell</span>
+              </li>
+              <li>
+                <a href="https://drupal.org/user/392435" style="text-align: center;">Drupal.org</a><span style="text-align: center;">—jason.bell</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fragment" data-fragment-index="1">
+            <p>I help organize <a href="http://www.meetup.com/The-Fox-Valley-Drupal-Meetup-Group/">Fox Valley Drupal</a>.</p>
+          </div>
+        </section>
+
+        <section>
+          <section>
+            <h1>Sass</h1>
+            <ul>
+              <li>
+                <span style="text-align: center;">Sass is a preprocessor for CSS that will help you fall in love with CSS all over again.</span>
+              </li>
+              <li>
+                <span style="text-align: center;">Sass is written in Ruby and distributed via RubyGems.</span>
+              </li>
+              <li>
+                <span style="text-align: center;">There are 2 syntaxes. Both work.</span>
+                <ul>
+                  <li>
+                    <span style="text-align: center;">.sass = old</span>
+                  </li>
+                  <li>
+                    <span style="text-align: center;">.scss = new, more common, just use it</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Installing Sass</h1>
+            <p>It's slightly different by platform, but essentially boils down to the following command:</p>
+<pre><code class="big-code" data-trim>
+gem install sass
+</code></pre>
+
+          </section>
+
+          <section>
+            <h1>Create a Sass project</h1>
+
+            <p>Every valid CSS3 stylesheet is valid .scss. You can change the extension of an existing file to get rolling.</p>
+
+            <p>From your project directory run:</p>
+
+<pre><code class="big-code" data-trim>
+sass --watch style.scss:style.css
+</code></pre>
+
+            <p>This will compile your .scss file into a .css file.</p>
+          </section>
+        </section>
+
+        <section>
+          <h1>Variables</h1>
+          <p>Use variables to store values you use all over the place.</p>
+
+          <div style="float:left; width: 48%; margin: 0 2% 0 0">
+            <h2>CSS</h2>
+
+            <pre>
+<code data-trim>
+$black: rgb(30, 30, 30);
 $green: rgb(116, 187, 2);
 $base-font-size:   16px;
 $base-line-height: 20px;
@@ -175,16 +139,22 @@ body {
   color: $black;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  padding: $base-font-size*2;</code>
-<code>}
+  padding: $base-font-size*2;
+}
 
 h1 {
   color: $green;
 }
-</code></pre>
-</div>
-<pre style="width: 392px; position: absolute; height: 191px; z-index: 4; left: 531px; top: 278px;" class="absolute-element">
-<code>body {
+</code>
+            </pre>
+          </div>
+
+          <div style="float:right; width: 48%; margin: 0 0 0 2%">
+            <h2>Sass</h2>
+
+            <pre>
+<code data-trim>
+body {
   color: #1e1e1e;
   font-size: 16px;
   line-height: 20px;
@@ -192,384 +162,608 @@ h1 {
 }
 
 h1 {
-  color: #74bb02; }
+  color: #74bb02;
+}
 </code>
-<div style="font-style: normal; font-variant: normal;">
-    <br>
-</div>
-</pre>
-<br>
-</section>
-<section>
-    <h2>Nesting</h2>
-<div>Stop repeating yourself and doing things over again.</div>
-<div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 183px; top: 229px;">Then</div>
-<div class="absolute-element" style="position: absolute; width: 507px; height: 414px; z-index: 5; left: 7px; top: 290px; max-height: none; max-width: none;">
-<pre><code>footer {
-&nbsp; border-top: 1px solid $black;
+            </pre>
+          </div>
+        </section>
+
+        <section>
+          <h1>Nesting</h1>
+
+          <p>Stop repeating yourself and doing things over again.</p>
+
+          <div style="float:left; width: 48%; margin: 0 2% 0 0">
+            <h2>Then</h2>
+<pre><code data-trim>
+footer {
+  border-top: 1px solid $black;
 }
 
 footer p {
-&nbsp; font-size: $base-font-size*.8;
+  font-size: $base-font-size*.8;
 }
 
 footer p.legal {
-&nbsp; float: left;
+  float: left;
 }
 
 footer p.contact {
-&nbsp; float: right;
-}</code></pre>
-</div>
-<div class="absolute-element" style="position: absolute; width: 437px; height: 412px; z-index: 6; left: 506px; top: 288px; max-height: none; max-width: none;">
-<pre><code><font color="#f1c232">footer</font> {
-&nbsp; <font color="#6aa84f">border-top:</font> 1px solid $black;
+  float: right;
+}
+</code></pre>
+          </div>
 
-&nbsp; <font color="#f1c232">p</font> {
-&nbsp; &nbsp; <font color="#6aa84f">font-size:</font> $base-font-size*.8;
+          <div style="float:right; width: 48%; margin: 0 0 0 2%">
+            <h2>Now</h2>
+<pre><code data-trim>
+footer {
+  border-top: 1px solid $black;
 
-&nbsp; &nbsp; <font color="#f1c232">a</font> {
-&nbsp; &nbsp; &nbsp; <font color="#6aa84f">color:</font> $green;
-&nbsp; &nbsp; }
+  p {
+    font-size: $base-font-size*.8;
 
-&nbsp; &nbsp; <font color="#f1c232">&amp;.legal</font> {
-&nbsp; &nbsp; &nbsp; <font color="#6aa84f">float:</font> left;
-&nbsp; &nbsp; }
-&nbsp; }
-} </code></pre>
-</div>
-<div class="absolute-element" style="position: absolute; width: 85px; height: 46px; z-index: 7; left: 670px; top: 227px;">Now</div>
-</section>
-<section>
-    <h2>Mixins</h2>
-<div>Reusable chunks of CSS properties.<br>
-</div>
-<div class="absolute-element" style="position: absolute; width: 467px; height: 331px; z-index: 4; left: 10px; top: 178px; max-height: none; max-width: none;">
-<pre><code>$sans-serif: "Helvetica Neue", sans-serif;
-<span style="font-family: monospace; font-size: 20.06222915649414px; font-style: normal; font-variant: normal;">$serif: </span>Georgia, serif;
-</code><code>@mixin font-body {
-&nbsp; font-family: $sans-serif;
-&nbsp; font-weight: 400;
+    a {
+      color: $green;
+    }
+
+    .legal {
+      float: left;
+    }
+  }
+}
+</code></pre>
+          </div>
+
+        </section>
+
+        <section>
+          <h1>Mixins</h1>
+          <p>Create reusable chunks of CSS properties with <code>@mixin</code> and apply with <code>@include</code>.</p>
+
+          <div style="float:left; width: 48%; margin: 0 2% 0 0">
+<pre><code data-trim>
+$sans-serif: "Helvetica Neue", sans-serif;
+$serif: Georgia, serif;
+
+@mixin font-body {
+  font-family: $sans-serif;
+  font-weight: 400;
 }
 
 @mixin font-headers {
-&nbsp; font-family: $serif;
-&nbsp; font-weight: 400;
-} </code></pre>
-</div>
-<pre class="absolute-element" style="position: absolute; width: 417px; height: 184px; z-index: 4; left: 36px; top: 491px; max-height: none; max-width: none;">
-<code>body {
-  @include font-body;
-}</code>
-<code>
-h1 {
-  @include font-headers;
-} </code>
-</pre>
-<div class="absolute-element" style="position: absolute; width: 469px; height: 430px; z-index: 4; left: 474px; top: 285px; max-height: none; max-width: none;">
-<pre><code>body {
-&nbsp; font-family: "Helvetica Neue", sans-serif;
-&nbsp; font-weight: 400;
+  font-family: $serif;
+  font-weight: 400;
 }
-
-h1 {
-&nbsp; font-family: Georgia, serif;
-&nbsp; font-weight: 400;
-} </code></pre>
-</div>
-<br>
-</section>
-<section>
-    <h2>Resources</h2>
-<h3>Sass</h3>
-<div>
-<ul>
-<li>http://sass-lang.com/<br>
-</li>
-<li>http://thesassway.com/<br>
-</li>
-<li>http://sassmeister.com<br>
-</li>
-</ul>
-<div style="text-align: left;">
-    <br>
-</div>
-<h3>Compass</h3>
-<ul>
-<li>http://compass-style.org/<br>
-</li>
-</ul>
-</div>
-</section>
-</div>
-<div class="slides">
-    <section>
-        <h1>
-<img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73701/fvdmug-logo.png">
-        <br>
-</h1>
-<div>
-<h1 style="font-style: normal; font-variant: normal;">
-        <font style="font-size: 112px;">SASS &amp; COMPASS</font>
-    </h1>
-<div class="fragment" data-fragment-index="0" style="font-style: normal; font-variant: normal;">
-    <font color="#3d85c6" style="font-size: 72px;">&amp; Drupal</font>
-</div>
-</div>
-</section>
-<section>
-    <h2>Jason Bell<br>
-</h2>
-<div>I build pieces of the web at <a href="http://startinteraction.com">Start Interaction</a>.</div>
-<div>
-    <img src="https://s3.amazonaws.com/media-p.slid.es/uploads/jasonbell/images/73703/solid-teal.png" style="width: 200.9891027249289px; height: 171.3125901222229px; max-height: none; max-width: none;">
-    <br>
-</div>
-<div class="fragment" data-fragment-index="0">
-    <p>I am various permutations of myself on…</p>
-
-    <ul>
-<li>
-            <a href="http://twitter.com/j_bell" style="text-align: center;">Twitter</a>
-            <span style="text-align: center;">—@j_bell</span>
-            <br>
-</li>
-        <li>
-            <a href="https://alpha.app.net/jasonbell" style="text-align: center;">App.net</a>
-            <span style="text-align: center;">—@jasonbell</span>
-            <br>
-</li>
-        <li>
-            <a href="https://drupal.org/user/392435" style="text-align: center;">Drupal.org</a>
-            <span style="text-align: center;">—jason.bell</span>
-            <br>
-</li>
-    </ul>
-</div>
-<div class="fragment" data-fragment-index="1">
-<br>
-    <p>I help organize <a href="http://www.meetup.com/The-Fox-Valley-Drupal-Meetup-Group/">Fox Valley Drupal</a>.</p>
-<div>
-</div>
-</div>
-</section>
-    <section>
-        <section>
-            <h2>Sass</h2>
-<div>
-            <br>
-        </div>
-<div>
-        <ul>
-<li>
-<span style="text-align: center;">Sass is a preprocessor for CSS that will help you fall in love with CSS all over again.</span>
-        <br>
-</li>
-<li>
-<span style="text-align: center;">Sass is written in Ruby and distributed via RubyGems.</span>
-        <br>
-</li>
-<li>
-        <span style="text-align: center;">There are 2 syntaxes. Both work.</span>
-    </li>
-<ul>
-<li>
-    <span style="text-align: center;">.sass = old</span>
-</li>
-<li>
-<span style="text-align: center;">.scss = new, more common, just use it</span>
-</li>
-</ul>
-</ul>
-</div>
-</section>
-<section>
-    <h2>Installing Sass</h2>
-<div>It's slightly different by platform, but essentially boils down to the following command:</div>
-<div>
-    <br>
-</div>
-<div>
-<div>
-<pre><code><font style="font-size: 42px;">sudo gem install compass </font></code></pre>
-</div>
-</div>
-<div>
-<br>
-</div>
-<blockquote>
-<span style="font-size: 35.66618728637695px; font-style: normal; font-variant: normal;">
-    <a href="http://snugug.com/musings/installing-sass-and-compass-across-all-platform">http://snugug.com/musings/installing-sass-and-compass-across-all-platform</a>
-</span>
-</blockquote>
-<br>
-</section>
-<section>
-    <h2>Create a Sass project</h2>
-<div>Every valid CSS3 stylesheet is valid .scss. You can change the extension of an existing file to get rolling.</div>
-<div>
-    <br>
-</div>
-<div>From your project directory run:</div>
-<div>
-<br>
-</div>
-<div>
-<pre><code><font style="font-size: 42px;">sass --watch style.scss:style.css</font></code></pre>
-</div>
-<div>
-<br>
-</div>
-<div>This will compile your .scss file into a .css file.</div>
-<br>
-</section>
-</section>
-<section>
-<h2>Variables</h2>
-<div>Use variables to store values you use all over the place.</div>
-<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 309px; top: 223px;">CSS</div>
-<div class="absolute-element" style="position: absolute; width: 855px; height: 46px; z-index: 4; left: 51px; top: 108px;">
-    <br>
-</div>
-<div class="absolute-element" style="position: absolute; width: 78px; height: 46px; z-index: 4; left: 154px; top: 223px;">Sass</div>
-<div class="absolute-element" style="position: absolute; width: 425px; height: 334px; z-index: 5; left: 12px; top: 278px;">
-<pre><code>$black: rgb(30, 30, 30);
-$green: rgb(116, 187, 2);
-$base-font-size:   16px;
-$base-line-height: 20px;
 
 body {
-  color: $black;
-  font-size: $base-font-size;
-  line-height: $base-line-height;
-  padding: $base-font-size*2;</code>
-<code>}
-
-h1 {
-  color: $green;
-}
-</code></pre>
-</div>
-<pre style="width: 392px; position: absolute; height: 191px; z-index: 4; left: 531px; top: 278px;" class="absolute-element">
-<code>body {
-  color: #1e1e1e;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 32px;
-}
-
-h1 {
-  color: #74bb02; }
-</code>
-<div style="font-style: normal; font-variant: normal;">
-    <br>
-</div>
-</pre>
-<br>
-</section>
-<section>
-    <h2>Nesting</h2>
-<div>Stop repeating yourself and doing things over again.</div>
-<div class="absolute-element" style="position: absolute; width: 90px; height: 46px; z-index: 4; left: 183px; top: 229px;">Then</div>
-<div class="absolute-element" style="position: absolute; width: 507px; height: 414px; z-index: 5; left: 7px; top: 290px; max-height: none; max-width: none;">
-<pre><code>footer {
-&nbsp; border-top: 1px solid $black;
-}
-
-footer p {
-&nbsp; font-size: $base-font-size*.8;
-}
-
-footer p.legal {
-&nbsp; float: left;
-}
-
-footer p.contact {
-&nbsp; float: right;
-}</code></pre>
-</div>
-<div class="absolute-element" style="position: absolute; width: 437px; height: 412px; z-index: 6; left: 506px; top: 288px; max-height: none; max-width: none;">
-<pre><code><font color="#f1c232">footer</font> {
-&nbsp; <font color="#6aa84f">border-top:</font> 1px solid $black;
-
-&nbsp; <font color="#f1c232">p</font> {
-&nbsp; &nbsp; <font color="#6aa84f">font-size:</font> $base-font-size*.8;
-
-&nbsp; &nbsp; <font color="#f1c232">a</font> {
-&nbsp; &nbsp; &nbsp; <font color="#6aa84f">color:</font> $green;
-&nbsp; &nbsp; }
-
-&nbsp; &nbsp; <font color="#f1c232">&amp;.legal</font> {
-&nbsp; &nbsp; &nbsp; <font color="#6aa84f">float:</font> left;
-&nbsp; &nbsp; }
-&nbsp; }
-} </code></pre>
-</div>
-<div class="absolute-element" style="position: absolute; width: 85px; height: 46px; z-index: 7; left: 670px; top: 227px;">Now</div>
-</section>
-<section>
-    <h2>Mixins</h2>
-<div>Reusable chunks of CSS properties.<br>
-</div>
-<div class="absolute-element" style="position: absolute; width: 467px; height: 331px; z-index: 4; left: 10px; top: 178px; max-height: none; max-width: none;">
-<pre><code>$sans-serif: "Helvetica Neue", sans-serif;
-<span style="font-family: monospace; font-size: 20.06222915649414px; font-style: normal; font-variant: normal;">$serif: </span>Georgia, serif;
-</code><code>@mixin font-body {
-&nbsp; font-family: $sans-serif;
-&nbsp; font-weight: 400;
-}
-
-@mixin font-headers {
-&nbsp; font-family: $serif;
-&nbsp; font-weight: 400;
-} </code></pre>
-</div>
-<pre class="absolute-element" style="position: absolute; width: 417px; height: 184px; z-index: 4; left: 36px; top: 491px; max-height: none; max-width: none;">
-<code>body {
   @include font-body;
-}</code>
-<code>
+}
+
 h1 {
   @include font-headers;
-} </code>
-</pre>
-<div class="absolute-element" style="position: absolute; width: 469px; height: 430px; z-index: 4; left: 474px; top: 285px; max-height: none; max-width: none;">
-<pre><code>body {
-&nbsp; font-family: "Helvetica Neue", sans-serif;
-&nbsp; font-weight: 400;
+}
+</code></pre>
+          </div>
+          <div style="float:right; width: 48%; margin: 0 0 0 2%">
+
+<pre><code data-trim>
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 400;
 }
 
 h1 {
-&nbsp; font-family: Georgia, serif;
-&nbsp; font-weight: 400;
-} </code></pre>
-</div>
-<br>
-</section>
-<section>
-    <h2>Resources</h2>
-<h3>Sass</h3>
-<div>
-<ul>
-<li>http://sass-lang.com/<br>
-</li>
-<li>http://thesassway.com/<br>
-</li>
-<li>http://sassmeister.com<br>
-</li>
-</ul>
-<div style="text-align: left;">
-    <br>
-</div>
-<h3>Compass</h3>
-<ul>
-<li>http://compass-style.org/<br>
-</li>
-</ul>
-</div>
-</section>
-</div>
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+</code></pre>
 
+          </div>
+        </section>
+
+        <section>
+          <h1>Inheritance</h1>
+          <p>One selector can inherit properties from another without duplication using <code>@extend</code>.</p>
+
+          <div style="float:left; width: 48%; margin: 0 2% 0 0">
+            <h3>Sass</h3>
+<pre><code data-trim>
+.error {
+  border: 1px #f00;
+  background: #fdd;
+}
+.error.intrusion {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.badError {
+  @extend .error;
+  border-width: 3px;
+}
+</code></pre>
+          </div>
+          <div style="float:right; width: 48%; margin: 0 0 0 2%">
+            <h3>CSS</h3>
+
+<pre><code data-trim>
+.error, .badError {
+  border: 1px #f00;
+  background: #fdd;
+}
+
+.error.intrusion,
+.badError.intrusion {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.badError {
+  border-width: 3px;
+}
+</code></pre>
+
+          </div>
+        </section>
+
+        <section>
+          <h1>Extend placeholder</h1>
+          <p>Instead of a class you can create a set of properties that don't write directly to the CSS unless applied with <code>@extend</code>.</p>
+
+          <div style="float:left; width: 48%; margin: 0 2% 0 0">
+            <h3>Sass</h3>
+<pre><code data-trim>
+%message {
+  border: 1px black;
+  border-radius: 5px;
+  font-size: .9em;
+}
+
+.error {
+  @extend %message;
+  background: red;
+}
+
+.success {
+  @extend %message;
+  background: green;
+}
+</code></pre>
+          </div>
+          <div style="float:right; width: 48%; margin: 0 0 0 2%">
+            <h3>CSS</h3>
+
+<pre><code data-trim>
+.error, .success {
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: .9em;
+  margin-bottom: 1em;
+  padding: .5em;
+}
+
+.error {
+  background: red;
+}
+
+.success {
+  background: green;
+}
+</code></pre>
+
+          </div>
+        </section>
+
+        <section>
+          <h1>Mixin, Extend or Class?</h1>
+          <p>Decide what works best in your project. Mixins can create duplicate CSS</p>
+          <ul>
+            <li>Do you want your HTML filled with classes?</li>
+            <li>Do you want a little bit ofduplication in your compiled CSS?</li>
+          </ul>
+
+          <blockquote cite="http://8gramgorilla.com/mastering-sass-extends-and-placeholders/">
+            <p>As a rule of thumb, it’s better to never extend a class selector and always to use a placeholder selector in it’s place instead.</p>
+            <b><a href="http://8gramgorilla.com/mastering-sass-extends-and-placeholders/">Chris Lamb</a></b>
+          </blockquote>
+        </section>
+
+        <section>
+          <section>
+            <h1>Compass</h1>
+            <blockquote>
+              Compass is a collection of helpful tools and battle-tested best practices for Sass.
+            </blockquote>
+            <ul>
+              <li>
+                Compass is a CSS authoring framework that uses Sass.
+              </li>
+              <li>
+                Compass is written in Ruby and distributed via RubyGems.
+              </li>
+              <li>
+                Compass is project aware. It helps manage images, scripts and fonts too.</a>.
+              </li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>Installing Compass</h1>
+            <p>It's slightly different by platform, but essentially boils down to the following command:</p>
+<pre><code class="big-code" data-trim>
+gem install compass
+</code></pre>
+            <h2>Just getting started?</h2>
+            <p>Install compass and Sass will be installed for you.</p>
+            <p>
+              <a href="http://snugug.com/musings/installing-sass-and-compass-across-all-platform">http://snugug.com/musings/installing-sass-and-compass-across-all-platform</a>
+            </p>
+          </section>
+
+          <section>
+            <h1>Create a Compass project</h1>
+
+            <p>Compass will create a project directory for you. If you’re creating a new Drupal theme…</p>
+
+<pre><code class="big-code" data-trim>
+cd sites/all/themes
+compass create theme_name
+</code></pre>
+
+            <p>This will create a directory called "theme_name" with subdirectories and a config.rb file.</p>
+          </section>
+
+          <section>
+            <h1>Use Compass</h1>
+
+            <p>Compass uses its own compiler. So now instead of</p>
+
+<pre><code class="big-code" data-trim>
+sass --watch style.scss:style.css
+</code></pre>
+
+            <p>we now use</p>
+
+<pre><code class="big-code" data-trim>
+compass watch
+</code></pre>
+
+            <p>Compass is now watching for changes and will compile when you save files with changes.</p>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Compass Core</h1>
+            <p>Compass provides a robust set of code patterns for re-use.</p>
+            <ul>
+              <li>CSS3: cross-browser mixins</li>
+              <li>Typography: common typographic patterns</li>
+              <li>Utilities: common style patterns</li>
+            </ul>
+          </section>
+
+          <section>
+            <h1>CSS3</h1>
+            <p>Compass writes out CSS3 properties with browser fallbacks.</p>
+
+            <div style="float:left; width: 48%; margin: 0 2% 0 0">
+              <h3>Sass</h3>
+<pre><code data-trim>
+%message {
+  @include border-radius(3px);
+  @include box-shadow();
+  border: 1px black;
+}
+
+.error {
+  @extend %message;
+  background: red;
+}
+
+.success {
+  @extend %message;
+  background: green;
+}
+</code></pre>
+            </div>
+
+            <div style="float:right; width: 48%; margin: 0 0 0 2%">
+              <h3>CSS</h3>
+
+<pre><code data-trim>
+.error, .success {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 10px 2px #323232;
+  -moz-box-shadow: 0 2px 10px 2px #323232;
+  box-shadow: 0 2px 10px 2px #323232;
+  border: 1px black;
+  margin-bottom: 1em;
+}
+
+.error {
+  background: red;
+}
+
+.success {
+  background: green;
+}
+</code></pre>
+
+            </div>
+          </section>
+
+          <section>
+            <h1>Typography</h1>
+            <p>Compass ships with a very powerful (and slightly confusing) vertical rhythm system.</p>
+
+            <div style="float:left; width: 48%; margin: 0 2% 0 0">
+              <h3>Sass</h3>
+<pre><code data-trim>
+@include establish-baseline;
+h1 {
+  @include adjust-font-size-to(39px, 2);
+  @include rhythm(0, 0, 0, 1, 39px);
+}
+</code></pre>
+            </div>
+            <div style="float:right; width: 48%; margin: 0 0 0 2%">
+              <h3>CSS</h3>
+
+<pre><code data-trim>
+html {
+  font-size: 16px;
+  line-height: 1.25em;
+}
+
+h1 {
+  font-size: 2.4375em;
+  line-height: 1.02564em;
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.51282em;
+}
+</code></pre>
+
+            </div>
+          </section>
+
+          <section>
+            <h1>Utilities</h1>
+            <p>Compass has some great utilities for text, lists, image replacement, and more.</p>
+
+            <div style="float:left; width: 48%; margin: 0 2% 0 0">
+              <h3>Sass</h3>
+<pre><code data-trim>
+nav {
+  ul {
+    @include inline-block-list(1em);
+  }
+}
+
+#{headings(1,4)} {
+  @include font-headers;
+
+  a {
+    @include link-colors(inherit, $hover, $active, inherit, $focus);
+  }
+}
+
+</code></pre>
+            </div>
+
+            <div style="float:right; width: 48%; margin: 0 0 0 2%">
+              <h3>CSS</h3>
+
+<pre><code data-trim>
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+h1, h2, h3, h4 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+}
+
+h1 a, h2 a, h3 a, h4 a {
+  color: inherit;
+}
+
+h1 a:visited, h2 a:visited, h3 a:visited, h4 a:visited {
+  color: inherit;
+}
+
+h1 a:focus, h2 a:focus, h3 a:focus, h4 a:focus {
+  color: #448087;
+}
+
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+  color: #448087;
+}
+
+h1 a:active, h2 a:active, h3 a:active, h4 a:active {
+  color: #141414;
+}
+</code></pre>
+
+            </div>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Compass Extensions</h1>
+            <p>Compass extensions allow for the inclusion of stylesheet libraries, templates, patterns, and more.</p>
+            <h3>My current favorites</h3>
+
+            <ul>
+              <li><a href="https://github.com/Team-Sass/breakpoint">Breakpoint</a>: Really Simple Media Queries</li>
+              <li><a href="https://github.com/Team-Sass/Singularity">Singularity</a>: Grids Without Limits</li>
+              <li><a href="http://jaredhardy.com/sassy-buttons/">Sassy Buttons</a>: Beautiful buttons</li>
+              <li><a href="https://github.com/Team-Sass/toolkit">Toolkit</a>: your swiss army knife for Progressive Enhancement and Responsive Web Design</li>
+            </ul>
+
+          </section>
+          <section>
+            <h2>Using Compass Extensions</h2>
+
+            <div class="fragment" data-fragment-index="0">
+              <p>On the command line</p>
+              <pre><code>
+                gem install {extension}
+              </code></pre>
+            </div>
+
+            <div class="fragment" data-fragment-index="1">
+              <p>In your <code>config.rb</code> file</p>
+              <pre><code>
+                require '{extension}'
+              </code></pre>
+            </div>
+
+            <div class="fragment" data-fragment-index="2">
+              <p>In your SCSS base</p>
+              <pre><code>
+                @import '{extension}'
+              </code></pre>
+            </div>
+          </section>
+
+          <section>
+            <h2>Breakpoint</h2>
+            <p>Set breakpoint variables and do amazing things!</p>
+
+<pre><code>
+// Your basic media queries, min-width and min/max width, are super easy!
+$basic: 543px;
+$pair: 456px 794px;
+
+#foo {
+  content: 'No Media Queries';
+
+  @include breakpoint($basic) {
+    content: 'Basic Media Query';
+  }
+
+  @include breakpoint($pair) {
+    content: 'Paired Media Query';
+  }
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Singularity</h2>
+            <p>A ratio based grid framework that helps you leave 960 in the dust! Works well with Breakpoint too.</p>
+
+<pre><code>
+$grids: 12;
+$grids: add-grid(2 8 2 at $desk);
+$gutters: 1/3;
+
+article {
+  @include breakpoint($desk) {
+    @include grid-span(8, 3);
+  }
+}
+
+aside {
+  @include breakpoint($desk) {
+    @include grid-span(2, 1);
+  }
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Sassy Buttons</h2>
+
+<pre><code>
+button {
+  @include sassy-button("shiny", 15px, 26px, #ffd71a, #ffaa1a);
+}
+</code></pre>
+          </section>
+
+          <section>
+            <h2>Toolkit</h2>
+            <p>Toolkit bundles a bunch of useful responsive tools into one, well… toolkit.</p>
+            <ul>
+              <li>Border Box</li>
+              <li>Fluid Media</li>
+              <li>Progressive Enhancement</li>
+              <li>Clearfix</li>
+              <li>Vertical Center</li>
+              <li>Color Functions</li>
+              <li>other stuff</li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <h1>Sass & Compass with Drupal</h1>
+          <p>Yes, there are Drupal modules with these names.</p>
+          <ul>
+            <li><a href="https://drupal.org/project/sass">SASS/SCSS</a></li>
+            <li><a href="https://drupal.org/project/compass">Compass stylesheet tool</a></li>
+          </ul>
+          <p class="fragment" data-fragment-index="0">No. I have not used these. I'm not entirely sure why you would want to.</p>
+          <p class="fragment" data-fragment-index="1">Sass and Compass are authoring tools, not server side components.</p>
+        </section>
+        <section>
+          <h1>Resources</h1>
+          <p>Use your favorite search engine to find thousands of articles to help you.</p>
+          <p>Read <a href="http://snugug.github.io/RWD-with-Sass-Compass/#/thank-you">this presentation</a> from Sam Richard for more depth on what we covered tonight.</p>
+
+          <div style="float:left; width: 48%; margin: 0 2% 0 0">
+            <h3>Sass</h3>
+            <ul>
+              <li><a href="http://sass-lang.com">http://sass-lang.com</a></li>
+              <li><a href="http://thesassway.com">http://thesassway.com</a></li>
+              <li><a href="http://sassmeister.com">http://sassmeister.com</a></li>
+            </ul>
+          </div>
+
+          <div style="float:right; width: 48%; margin: 0 0 0 2%">
+            <h3>Compass</h3>
+            <ul>
+              <li><a href="http://compass-style.org">http://compass-style.org</a></li>
+              <li><a href="http://atendesigngroup.com/blog/vertical-rhythm-compass">Vertical Rhythm with Compass</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.min.js"></script>
@@ -583,6 +777,7 @@ h1 {
 				progress: true,
 				history: true,
 				center: true,
+        loop: false,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none

@@ -1,0 +1,80 @@
+////////////////////////
+// Design Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All styling, non box model properties go here
+////////////////////////
+
+
+html {
+  background: {
+    color: rgb(111, 37, 81);
+  }
+}
+
+body {
+  @include font-body;
+  background: white;
+  color: $black;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  margin: 0 auto;
+}
+
+header {
+  h1 {
+    @include replace-text("fvdmug.png");
+    background-repeat: none;
+    height: image-height("fvdmug.png");
+    widows: image-width("fvdmug.png");
+    color: $green;
+    margin: 0 auto;
+  }
+}
+
+nav {
+  @include background-image(linear-gradient(#aaaaaa, #cccccc, #aaaaaa));
+  padding: 1em;
+  text-align: center;
+
+  ul {
+    @include inline-block-list(1em);
+  }
+}
+
+h1 {
+  @include font-headers;
+  color: $green;
+}
+
+.error {
+  @extend %message;
+  background: red;
+}
+
+.success {
+  @extend %message;
+  background: green;
+}
+
+footer {
+  border-top: 1px solid $black;
+
+  p {
+    font-size: $base-font-size*.8;
+
+    a {
+      color: $green;
+    }
+
+    &.legal {
+      float: left;
+    }
+
+    &.contact {
+      float: right;
+    }
+  }
+}

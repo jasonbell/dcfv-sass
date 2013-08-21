@@ -1,0 +1,68 @@
+////////////////////////
+// Variables Partials
+//
+// All of your variables should go in this file.
+////////////////////////
+
+/**
+ * Vertical Rhythm
+ */
+$base-font-size:   16px; // The font size set on the root html element.
+$base-line-height: 20px; // This line-height determines the basic unit of vertical rhythm.
+$default-rhythm-border-style: solid;
+
+/**
+ * Fonts
+ */
+$sans-serif: "Helvetica Neue", sans-serif;
+$serif: Georgia, serif;
+$fixed-width: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
+
+/**
+ * Colors
+ */
+
+// Greyscale
+$white : rgb(245, 245, 245);
+$light-grey : rgb(200, 200, 200);
+$mid-grey : rgb(120, 120, 120);
+$dark-grey : rgb(50, 50, 50);
+$black : rgb(20, 20, 20);
+
+// Site colors
+$cream: rgb(243, 236, 202);
+$orange: rgb(232, 111, 61);
+$blue: rgb(85, 160, 169);
+$red: rgb(203, 2, 35);
+$green: rgb(116, 187, 2);
+
+// Link colors
+$normal : $blue;
+$hover : darken($blue, 10%);
+$active : $black;
+$visited : $blue;
+$focus : darken($blue, 10%);
+
+/**
+ * Breakpoint
+ */
+$hand: 250px;
+$lap: 600px;
+$desk: 800px;
+
+/**
+ * Compass Defaults
+ */
+$default-border-radius: 4px;
+$default-box-shadow-color: $dark-grey;
+$default-box-shadow-h-offset: 0;
+$default-box-shadow-v-offset: 2px;
+$default-box-shadow-blur: 10px;
+$default-box-shadow-spread: 2px;
+$default-box-shadow-inset: false;
+$default-text-shadow-color: $dark-grey;
+$default-text-shadow-blur: 3px;
+$default-text-shadow-h-offset: 1px;
+$default-text-shadow-v-offset: 1px;
+
+$sb-padding: $base-rhythm-unit/4 $base-rhythm-unit/2;

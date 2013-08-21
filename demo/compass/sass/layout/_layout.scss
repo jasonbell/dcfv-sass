@@ -1,0 +1,60 @@
+////////////////////////
+// Layouts Partials
+//
+// Separate your Layout from Design
+// Build sub folders and partials in this folder, with everything being imported, in cascading order, into this file.
+//
+// All box model properties go here
+////////////////////////
+
+.container {
+  $grids: 4;
+  $grids: add-grid(6 at $lap);
+  $grids: add-grid(16 at $desk);
+
+  $gutters: 1/4;
+  $gutters: add-gutter(1/4 at $desk);  margin: 0 auto;
+
+  max-width: 70em;
+  min-height: 100%;
+  position: relative;
+  width: 95%;
+  @include pie-clearfix;
+  @include background-grid;
+}
+
+main {
+  article {
+    @include breakpoint($desk) {
+      @include grid-span(10, 1);
+    }
+  }
+
+  aside {
+    @include breakpoint($desk) {
+      @include grid-span(6, 11);
+    }
+  }
+}
+
+.author {
+  @include breakpoint($lap) {
+    @include grid-span(3, 1);
+  }
+  @include breakpoint($desk) {
+    @include grid-span(5, 1);
+  }
+}
+
+.post-date {
+  @include breakpoint($lap) {
+    @include grid-span(3, 4);
+  }
+  @include breakpoint($desk) {
+    @include grid-span(5, 6);
+  }
+}
+
+footer {
+  @include pie-clearfix;
+}
